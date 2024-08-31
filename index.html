@@ -1,0 +1,1087 @@
+<!DOCtype html>
+<html lang= "en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Calorimetry</title>
+
+<style>
+body {    
+ background-image: linear-gradient(to right, rgba(95,12,12,0), rgba(95,50,50,0.5));  
+  }
+ h2 {  
+ font-style: italic;   
+ font-family: "Playfair Display", "Bookman", serif;  
+ color: #955050;  
+ letter-spacing:- 0.005em;   
+ word-spacing: 1px;    
+  }  
+  h4 {  
+ font-style: italic;   
+ font-family: "Playfair Display", "Bookman", serif;  
+ color: black;   
+ letter-spacing:- 0.005em;   
+ word-spacing: 1px;  
+ font-size: 1em;  
+ font-weight: bold;  
+  }  
+ h1 {  
+  position: relative;  
+  padding: 0;  
+  margin: 0;  
+  font-family: "Raleway", sans-serif;  
+  font-weight: 300;  
+  font-size: 1.5em;  
+  color: #955050;  
+  -webkit-transition: all 0.4s ease 0s;  
+  -o-transition: all 0.4s ease 0s;  
+  transition: all 0.4s ease 0s;  
+  text-align: left;  
+}  
+  
+p {  
+  position: relative;  
+  padding: 0;  
+  margin: 0;  
+  font-family: "Raleway", sans-serif;  
+  font-weight: 300;  
+  font-size: 20px;  
+  color: #080808;  
+  -webkit-transition: all 0.4s ease 0s;  
+  -o-transition: all 0.4s ease 0s;  
+  transition: all 0.4s ease 0s;  
+  text-align: center;
+  }  
+</style>
+  </head>
+
+<body>
+<h2><b>&#x1F31F Calorimetry &#x1F31F</b> </h2>
+
+<h1> Calorimetry is the branch of science that studies heat transmission and its effects. Whereas, by entering the corresponding values of the appropriate magnitude, we obtain the desired answers. Then, by scrolling down you will be able to infer the formulas of heat transmission, expansion of bodies, conversion of temperature scales and behavior of gases. </h1>
+
+<h2> Thermal Capacity and Heat propagation process </h2>
+<h2> Heat propagation process </h2>
+<script>
+      function algoritmox() {
+        var Qx = document.getElementById("Qx").value;
+        var dtx  = document.getElementById("dtx").value;
+        var Ctx = (Qx/dtx);
+        document.getElementById("CTX").innerHTML = "Amount of heat exchanged: <strong>" + Ctx + "J/s" + "</strong>";
+      }
+    </script>
+     
+    <body>
+    <label for="Qx">Amount of heat received or given in (J): </label>
+    <input id="Qx" type="number"><br>
+    <label for="dtx">Time Interval in(s): </label>
+    <input id="dtx" type="number"><br>
+    <button onclick="algoritmox()">Calculate</button>
+    <div id="CTX"></div>
+    <div id="extra">
+    <br>
+<h4>1 cal = 4,1868 J</h4>
+
+<h2> Specific heat </h2>
+<script>
+      function algoritmox1() {
+        var Ctx1 = document.getElementById("Ctx1").value;
+        var mx  = document.getElementById("mx").value;
+        var cx = (Ctx1/mx);
+        document.getElementById("CX").innerHTML = "Specific heat: <strong>" + cx + "J/s.m" + "</strong>";
+      }
+    </script>
+     
+    <body>
+    <label for="Ctx1">Thermal Capacity in (J/s): </label>
+    <input id="Ctx1" type="number"><br>
+    <label for="mx">Mass of the body in(Kg): </label>
+    <input id="mx" type="number"><br>
+    <button onclick="algoritmox1()">Calculate</button>
+    <div id="CX"></div>
+    <div id="extra">
+    <br>
+<h4>1 cal = 4,1868 J</h4>
+
+<h2> Transferred thermal energy generating a temperature variation </h2>
+
+<script>
+      function algoritmo() {
+        var m = document.getElementById("m").value;
+        var c  = document.getElementById("c").value;
+        var dT  = document.getElementById("dT").value;
+        var Qs = (m*c*dT);
+        document.getElementById("QS").innerHTML = "Amount of sensible heat received or imparted by a body: <strong>" + Qs + "J" + "</strong>";
+      }
+    </script>
+     
+    <body>
+    <label for="m">Body mass in (kg): </label>
+    <input id="m" type="number"><br>
+    <label for="c">Specific heat in (J/kg.ºC): </label>
+    <input id="c" type="number"><br>
+    <label for="dT">Temperature range in(ºC): </label>
+    <input id="dT" type="number"><br>
+    <button onclick="algoritmo()">Calculate</button>
+    <div id="QS"></div>
+    <div id="extra">
+    <br>
+<h4>1 cal = 4,1868 J</h4>
+
+<h2> Latent heat for change in the physical state of matter </h2>
+
+<script>
+      function algoritmo1() {
+        var m1 = document.getElementById("m1").value;
+        var L  = document.getElementById("L").value;
+        var Ql = (m1*L);
+        document.getElementById("QL").innerHTML = "The amount of heat received or given by a body that has generated a change in its physical state: <strong>" + Ql + "J" + "</strong>";
+      }
+    </script>
+     
+    <body>
+    <label for="m1">Body mass in (kg): </label>
+    <input id="m1" type="number"><br>
+    <label for="L">Calor latente in (J/kg): </label>
+    <input id="L" type="number"><br>
+    <button onclick="algoritmo1()">Calculate</button>
+    <div id="QL"></div>
+    <div id="extra">
+    <br>
+<h4>1 cal = 4,1868 J</h4>
+
+<h2> Specific heat and heat capacity<br>
+The specific heat is the constant of proportionality of the fundamental calorimetry equation. Its value depends directly on the substance that constitutes the body, that is, on the material of which it is made.<br>
+Heat Capacity: </h2>
+
+<script>
+      function algoritmo2() {
+        var m2 = document.getElementById("m2").value;
+        var ce  = document.getElementById("ce").value;
+        var Ct = (m2*ce);
+        document.getElementById("CT").innerHTML = "Heat capacity is related to the body, taking into account its mass and the substance it is made of: <strong>" + Ct + "J/ºC" + "</strong>";
+      }
+    </script>
+     
+    <body>
+    <label for="m2">Body mass in (kg): </label>
+    <input id="m2" type="number"><br>
+    <label for="ce">Specific heat in (J/kg.ºC): </label>
+    <input id="ce" type="number"><br>
+    <button onclick="algoritmo2()">Calculate</button>
+    <div id="CT"></div>
+    <div id="extra">
+    <br>
+<h4>1 cal = 4,1868 J</h4>
+
+<h2> Temperature conversion between Kelvin and Celsius scales </h2>
+<form name="myForm" id="myForm">
+    <table  border = "0" width = "300">
+        <tr>
+            <td>Kelvin:</td>
+            <td><input type="text" id="kelvin"></td></tr>
+        <tr>
+            <td>Celsius:</td>
+            <td><input type="text" id="celsius"></td>
+        </tr>
+    </table>
+    <button type="submit">Convert</button>
+    <button type="reset">Clear</button>
+</form>
+
+<script>
+
+document.getElementById("myForm").onsubmit=function(){
+    calculate();
+    return false;
+};
+
+function calculate()
+{
+  var kelvin = document.getElementById("kelvin").value;
+  var celsius = document.getElementById("celsius").value;
+  var final;
+
+  if (kelvin == "" && celsius == "")
+  {
+    alert("You need to fill in the blank field with at least one of the temperature scales. (Kelvin or Celsius)");
+    return;
+  }
+  else if (!(kelvin == "") && !(celsius == ""))
+  {
+    alert("To convert the temperature between the scales (Kelvin and Celsius and vice-versa). It is necessary to fill in one of the blank fields and not fill in what remains. Thus, you will find the value corresponding to the desired temperature scale.");
+    return;
+  }
+  else if (kelvin == "")
+  {
+    final = 5/5*(celsius*1 + 273/1);
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("kelvin").value = final;
+
+  }
+  else if (celsius == "")
+  {
+    final = 5*(kelvin - 273/1)/5;
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("celsius").value = final;
+  }
+} 
+
+</script>
+
+
+<h2> Temperature conversion between Fahrenheit and Celsius scales </h2>
+<form name="myForm1" id="myForm1">
+    <table  border = "0" width = "300">
+        <tr>
+            <td>Fahrenheit:</td>
+            <td><input type="text" id="fahrenheit"></td></tr>
+        <tr>
+            <td>Celsius:</td>
+            <td><input type="text" id="celsius1"></td>
+        </tr>
+    </table>
+    <button type="submit">Convert</button>
+    <button type="reset">Clear</button>
+</form>
+
+<script>
+
+document.getElementById("myForm1").onsubmit=function(){
+    calculate1();
+    return false;
+};
+
+function calculate1()
+{
+  var fahrenheit = document.getElementById("fahrenheit").value;
+  var celsius1 = document.getElementById("celsius1").value;
+  var final;
+
+  if (fahrenheit == "" && celsius1 == "")
+  {
+    alert("You need to fill in the blank field with at least one of the temperature scales. (Fahrenheit or Celsius)");
+    return;
+  }
+  else if (!(fahrenheit == "") && !(celsius1 == ""))
+  {
+    alert("To convert the temperature between the scales (Fahrenheit and Celsius and vice-versa). It is necessary to fill in one of the blank fields and not fill in what remains. Thus, you will find the value corresponding to the desired temperature scale.");
+    return;
+  }
+  else if (fahrenheit == "")
+  {
+    final = (9/5*(celsius1*1) + 32/1);
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("fahrenheit").value = final;
+
+  }
+  else if (celsius1 == "")
+  {
+    final = 5*(fahrenheit*1 - 32/1)/9;
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("celsius1").value = final;
+  }
+} 
+
+</script>
+
+
+<h2> Temperature conversion between Fahrenheit and Kelvin scales </h2>
+<form name="myForm2" id="myForm2">
+    <table  border = "0" width = "300">
+        <tr>
+            <td>Fahrenheit:</td>
+            <td><input type="text" id="fahrenheit1"></td></tr>
+        <tr>
+            <td>Kelvin:</td>
+            <td><input type="text" id="kelvin1"></td>
+        </tr>
+    </table>
+    <button type="submit">Convert</button>
+    <button type="reset">Clear</button>
+</form>
+
+<script>
+
+document.getElementById("myForm2").onsubmit=function(){
+    calculate2();
+    return false;
+};
+
+function calculate2()
+{
+  var fahrenheit1 = document.getElementById("fahrenheit1").value;
+  var kelvin1 = document.getElementById("kelvin1").value;
+  var final;
+
+  if (fahrenheit1 == "" && kelvin1 == "")
+  {
+    alert("You need to fill in the blank field with at least one of the temperature scales. (Fahrenheit or Kelvin)");
+    return;
+  }
+  else if (!(fahrenheit1 == "") && !(kelvin1 == ""))
+  {
+    alert("To convert the temperature between the scales (Fahrenheit and Kelvin and vice-versa). It is necessary to fill in one of the blank fields and not fill in what remains. Thus, you will find the value corresponding to the desired temperature scale.");
+    return;
+  }
+  else if (fahrenheit1 == "")
+  {
+    final = (9*(kelvin1*1 - 273/1)/5) + 32/1;
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("fahrenheit1").value = final;
+
+  }
+  else if (kelvin1 == "")
+  {
+    final = (5*(fahrenheit1*1 - 32/1)/9) + 273/1;
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("kelvin1").value = final;
+  }
+} 
+
+</script>
+
+<h2>Linear Dilation<br>
+Linear dilation takes into account the dilation suffered by a body in only one of its dimensions.</h2>
+
+<script>
+      function algoritmo3() {
+        var l0 = document.getElementById("l0").value;
+        var a  = document.getElementById("a").value;
+        var dth  = document.getElementById("dth").value;
+        var dl = (l0*a*dth);
+        document.getElementById("DL").innerHTML = "Length variation: <strong>" + dl + "m" + "</strong>";
+      }
+    </script>
+     
+    <body>
+    <label for="l0">Initial length in (m): </label>
+    <input id="l0" type="number"><br>
+    <label for="a">Coefficient of linear expansion in (ºC<sup>-1</sup>): </label>
+    <input id="a" type="number"><br>
+    <label for="dth">Temperature variation in (ºC): </label>
+    <input id="dth" type="number"><br>
+    <button onclick="algoritmo3()">Calculate</button>
+    <div id="DL"></div>
+    <div id="extra">
+    <br>
+
+
+<h2>Superficial Dilation<br>
+Surface dilation takes into account the dilation undergone by a given surface.</h2>
+
+<script>
+      function algoritmo4() {
+        var a0 = document.getElementById("a0").value;
+        var b  = document.getElementById("b").value;
+        var dth1  = document.getElementById("dth1").value;
+        var da = (a0*b*dth1);
+        document.getElementById("DA").innerHTML = "Area variation: <strong>" + da + "m²" + "</strong>";
+      }
+    </script>
+     
+    <body>
+    <label for="a0">Initial area in (m²): </label>
+    <input id="a0" type="number"><br>
+    <label for="b">Coefficient of superficial expansion in (ºC<sup>-1</sup>): </label>
+    <input id="b" type="number"><br>
+    <label for="dth1"> Temperature variation in (ºC): </label>
+    <input id="dth1" type="number"><br>
+    <button onclick="algoritmo4()">Calculate</button>
+    <div id="DA"></div>
+    <div id="extra">
+    
+<h4>The coefficient of superficial expansion (β) is equal to
+to twice the value of the linear expansion coefficient (α), i.e.:
+β = 2 . α</h4>
+<br>
+
+<h2>Volumetric Dilation<br>
+Volumetric dilation results from the increase in the volume of a body.</h2>
+
+<script>
+      function algoritmo5() {
+        var v0 = document.getElementById("v0").value;
+        var y  = document.getElementById("y").value;
+        var dth2  = document.getElementById("dth2").value;
+        var dv = (v0*y*dth2);
+        document.getElementById("DV").innerHTML = "Volume variation: <strong>" + dv + "m³" + "</strong>";
+      }
+    </script>
+     
+    <body>
+    <label for="v0">Initial volume in (m³): </label>
+    <input id="v0" type="number"><br>
+    <label for="y">Coefficient of superficial expansion in (ºC<sup>-1</sup>): </label>
+    <input id="y" type="number"><br>
+    <label for="dth2"> Temperature variation in (ºC): </label>
+    <input id="dth2" type="number"><br>
+    <button onclick="algoritmo5()">Calculate</button>
+    <div id="DV"></div>
+    <div id="extra">
+    
+<h4>The volumetric expansion coefficient (γ) is three times
+greater than the coefficient of linear expansion (α), i.e.:
+γ = 3 . α</h4>
+<br>
+
+
+<h2> Zero Law of Thermodynamics<br>
+The Zero Law of Thermodynamics deals with the conditions for obtaining thermal equilibrium. Among these conditions, we can mention the influence of the materials that make the thermal conductivity higher or lower.</h2>
+<h2>Thermal equilibrium</h2>
+<h4>Q1+Q2+Q3 ...=0</h4>
+
+<form name="myFormy3" id="myFormy3">
+    <table  border = "0" width = "400">
+        <tr>
+            <td>Q1 - Amount of heat 1 in (J):</td>
+            <td><input type="text" id="Qy1"></td></tr>
+        <tr>
+            <td>Q2 - Amount of heat 2 in (J):</td>
+            <td><input type="text" id="Qy2"></td>
+        </tr>
+        <tr>
+            <td>Q3 - Amount of heat 3 in (J):</td>
+            <td><input type="text" id="Qy3"></td>
+        </tr>
+    </table>
+    <button type="submit">Calculate</button>
+    <button type="reset">Clear</button>
+</form>
+
+<script>
+
+document.getElementById("myFormy3").onsubmit=function(){
+    calculatey3();
+    return false;
+};
+
+function calculatey3()
+{
+  var Qy1 = document.getElementById("Qy1").value;
+  var Qy2 = document.getElementById("Qy2").value;
+  var Qy3 = document.getElementById("Qy3").value;
+  var final;
+
+  if (Qy1 == "" && Qy2 == "" && Qy3 == "")
+  {
+    alert("You need to fill in in the blank field the values you have for this and find the amount of heat remaining.");
+    return;
+  }
+  else if (!(Qy1 == "") && !(Qy2 == "") && !(Qy3 == ""))
+  {
+    alert("To find the heat amount that you wish. It is necessary to fill that ones of the blank fields and not fill in one remains. Thus, you will find the value corresponding to the desired heat amount remains.");
+    return;
+  }
+  else if (Qy1 == "")
+  { //Q1+Q2+Q3...=0
+    final = (-Qy2*1) + (-Qy3*1);
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("Qy1").value = final;
+
+  }
+  else if (Qy2 == "")
+  {
+    final = (-Qy1*1) + (-Qy3*1);
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("Qy2").value = final;
+  }
+  else if (Qy3 == "")
+  {
+    final = (-Qy1*1) + (-Qy2*1);
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("Qy3").value = final;
+  }
+  
+} 
+
+</script>
+
+<h4>Sum of Heat Amount = Q1+Q2+Q3...</h4>
+<form name="myForm4" id="myForm4">
+    <table  border = "0" width = "400">
+        <tr>
+            <td>Sum of Heat Amount in (J):</td>
+            <td><input type="text" id="SumHA"></td></tr>
+        <tr>
+            <td>Q1 - Amount of heat 1 in (J):</td>
+            <td><input type="text" id="Qx1"></td>
+        </tr>
+        <tr>
+            <td>Q2 - Amount of heat 2 in (J):</td>
+            <td><input type="text" id="Qx2"></td>
+        </tr>
+
+        <tr>
+            <td>Q3 - Amount of heat 3 in (J):</td>
+            <td><input type="text" id="Qx3"></td>
+        </tr>
+    </table>
+    <button type="submit">Calculate</button>
+    <button type="reset">Clear</button>
+</form>
+
+<script>
+
+document.getElementById("myForm4").onsubmit=function(){
+    calculate4();
+    return false;
+};
+
+function calculate4()
+{
+  var SumHA = document.getElementById("SumHA").value;
+  var Qx1 = document.getElementById("Qx1").value;
+  var Qx2 = document.getElementById("Qx2").value;
+  var Qx3 = document.getElementById("Qx3").value;
+  var final;
+
+  if (SumHA == "" && Qx1 == "" && Qx2 == "" && Qx3 == "")
+  {
+    alert("You need to fill in in the blank field the values you have for this and find the amount of heat remaining.");
+    return;
+  }
+  else if (!(SumHA == "") && !(Qx1 == "") && !(Qx2 == "") && !(Qx3 == ""))
+  {
+    alert("To find the heat amount that you wish. It is necessary to fill that ones of the blank fields and not fill in one remains. Thus, you will find the value corresponding to the desired heat amount remains.");
+    return;
+  }
+  else if (SumHA == "")
+  { //Sum of Heat Amount=Q1+Q2+Q3...
+    final = Qx1*1 + Qx2*1 + Qx3*1;
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("SumHA").value = final;
+
+  }
+  else if (Qx1 == "")
+  {
+    final = SumHA*1 - Qx2*1 - Qx3*1;
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("Qx1").value = final;
+  }
+  else if (Qx2 == "")
+  {
+    final = SumHA*1 - Qx1*1 - Qx3*1;
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("Qx2").value = final;
+  }
+  else if (Qx3 == "")
+  {
+    final = SumHA*1 - Qx1*1 - Qx2*1;
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("Qx3").value = final;
+  }
+  
+} 
+
+</script>
+
+<h2>First Law of Thermodynamics<br>
+The First Law of Thermodynamics relates to the principle of conservation of energy. This means that the energy in a system can neither be destroyed nor created, only transformed.</h2>
+
+<script>
+      function algoritmo6() {
+        var w = document.getElementById("w").value;
+        var dU  = document.getElementById("dU").value;
+        var Q1 = (w*1-dU*1);
+        document.getElementById("QQ1").innerHTML = "Amount of heat: <strong>" + Q1 + "J" + "</strong>";
+      }
+    </script>
+     
+    <body>
+    <label for="w">Work in (J): </label>
+    <input id="w" type="number"><br>
+    <label for="dU">Internal Energy Change in (J): </label>
+    <input id="dU" type="number"><br>
+    <button onclick="algoritmo6()">Calculate</button>
+    <div id="QQ1"></div>
+    <div id="extra">
+    <br>
+
+<h2>Second Law of Thermodynamics<br>
+Heat transfers always occur from the warmer body to the cooler body, this happens spontaneously, but not the other way around. Which is to say that the transfer processes of thermal energy are irreversible.</h2>
+
+<script>
+      function algoritmo7() {
+        var QA = document.getElementById("QA").value;
+        var QB  = document.getElementById("QB").value;
+        var n = (QA*1-QB*1)/QA*1;
+        document.getElementById("N").innerHTML = "Useful Work or Yield: <strong>" + n + " It hasn't magnitude" + "</strong>";
+      }
+    </script>
+     
+    <body>
+    <label for="QA">Heat provided by heating in (J): </label>
+    <input id="QA" type="number"><br>
+    <label for="QB">Heat Not Transformed into Work in (J): </label>
+    <input id="QB" type="number"><br>
+    <button onclick="algoritmo7()">Calculate</button>
+    <div id="N"></div>
+    <div id="extra">
+    <br>
+
+<h2>Gas behaviour</h2>
+<h4>Boyle's Law<br>
+Isothermal transformation of the ideal gases, so that the temperature remains constant, while the pressure and volume of the gas are inversely proportional.</h4>
+<form name="myForm5" id="myForm5">
+    <table  border = "0" width = "400">
+        <tr>
+            <td>Pressure 1 in (Pa):</td>
+            <td><input type="text" id="P1"></td></tr>
+        <tr>
+            <td>Volume 1 in (m³):</td>
+            <td><input type="text" id="V1"></td>
+        </tr>
+        <tr>
+            <td>Pressure 2 in (Pa):</td>
+            <td><input type="text" id="P2"></td>
+        </tr>
+
+        <tr>
+            <td>Volume 2 in (m³):</td>
+            <td><input type="text" id="V2"></td>
+        </tr>
+    </table>
+    <button type="submit">Calculate</button>
+    <button type="reset">Clear</button>
+</form>
+
+<script>
+
+document.getElementById("myForm5").onsubmit=function(){
+    calculate5();
+    return false;
+};
+
+function calculate5()
+{
+  var P1 = document.getElementById("P1").value;
+  var V1 = document.getElementById("V1").value;
+  var P2 = document.getElementById("P2").value;
+  var V2 = document.getElementById("V2").value;
+  var final;
+
+  if (P1 == "" && V1 == "" && P1 == "" && V2 == "")
+  {
+    alert("You need to fill in the blank field the values you have for this and find the value of the unknown Pressure or Volume..");
+    return;
+  }
+  else if (!(P1 == "") && !(V1 == "") && !(P2 == "") && !(V2 == ""))
+  {
+    alert("To find the unknown Pressure or Volume. You must fill in the blank fields and not fill in one of the fields in the dimension for which you want to find the proportional value.");
+    return;
+  }
+  else if (P1 == "")
+  { //P1xV1=P2xV2
+    final = (P2*V2)/V1;
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("P1").value = final;
+
+  }
+  else if (V1 == "")
+  {
+    final = (P2*V2)/P1;
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("V1").value = final;
+  }
+  else if (P2 == "")
+  {
+    final = (P1*V1)/V2;
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("P2").value = final;
+  }
+  else if (V2 == "")
+  {
+    final = (P1*V1)/P2;
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("V2").value = final;
+  }
+  
+} 
+
+</script>
+
+
+<h4>Gay-Lussac Law<br>
+Isovolumetric transformation of gases, i.e. at constant volume.The pressure exerted by the gas is proportional to its temperature.</h4>
+<form name="myForm6" id="myForm6">
+    <table  border = "0" width = "400">
+        <tr>
+            <td>Pressure 1 in (Pa):</td>
+            <td><input type="text" id="P11"></td></tr>
+        <tr>
+            <td>Temperature 2 in (K):</td>
+            <td><input type="text" id="T2"></td>
+        </tr>
+        <tr>
+            <td>Pressure 2 in (Pa):</td>
+            <td><input type="text" id="P22"></td>
+        </tr>
+
+        <tr>
+            <td>Temperature 1 in (K):</td>
+            <td><input type="text" id="T1"></td>
+        </tr>
+    </table>
+    <button type="submit">Calculate</button>
+    <button type="reset">Clear</button>
+</form>
+
+<script>
+
+document.getElementById("myForm6").onsubmit=function(){
+    calculate6();
+    return false;
+};
+
+function calculate6()
+{
+  var P11 = document.getElementById("P11").value;
+  var T2 = document.getElementById("T2").value;
+  var P22 = document.getElementById("P22").value;
+  var T1 = document.getElementById("T1").value;
+  var final;
+
+  if (P11 == "" && T2 == "" && P22 == "" && T1 == "")
+  {
+    alert("You need to fill in the blank field the values you have for this and find the value of the unknown Pressure or Temperature.");
+    return;
+  }
+  else if (!(P11 == "") && !(T2 == "") && !(P22 == "") && !(T1 == ""))
+  {
+    alert("To find the unknown Pressure or Volume. You must fill in the blank fields and not fill in one of the fields in the dimension for which you want to find the proportional value.");
+    return;
+  }
+  else if (P11 == "")
+  { //P1xT2=P2xT1
+    final = (P22*T1)/T2;
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("P11").value = final;
+
+  }
+  else if (T2 == "")
+  {
+    final = (P22*T1)/P11;
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("T2").value = final;
+  }
+  else if (P22 == "")
+  {
+    final = (P11*T2)/T1;
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("P22").value = final;
+  }
+  else if (T1 == "")
+  {
+    final = (P11*T2)/P22;
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("T1").value = final;
+  }
+  
+} 
+
+</script>
+
+<h4>Charles' Law<br>
+Isobaric transformation (constant pressure) of gases.That is, the volume of the gas is directly proportional to the temperature.</h4>
+<form name="myForm7" id="myForm7">
+    <table  border = "0" width = "400">
+        <tr>
+            <td>Volume 1 in (m³):</td>
+            <td><input type="text" id="V11"></td></tr>
+        <tr>
+            <td>Temperature 1 in (K):</td>
+            <td><input type="text" id="T11"></td>
+        </tr>
+        <tr>
+            <td>Volume 2 in (m³):</td>
+            <td><input type="text" id="V22"></td>
+        </tr>
+
+        <tr>
+            <td>Temperature 2 in (K):</td>
+            <td><input type="text" id="T22"></td>
+        </tr>
+    </table>
+    <button type="submit">Calculate</button>
+    <button type="reset">Clear</button>
+</form>
+
+<script>
+
+document.getElementById("myForm7").onsubmit=function(){
+    calculate7();
+    return false;
+};
+
+function calculate7()
+{
+  var V11 = document.getElementById("V11").value;
+  var T11 = document.getElementById("T11").value;
+  var V22 = document.getElementById("V22").value;
+  var T22 = document.getElementById("T22").value;
+  var final;
+
+  if (V11 == "" && T11 == "" && V22 == "" && T22 == "")
+  {
+    alert("You need to fill in the blank field the values you have for this and find the value of the unknown Volume or Temperature.");
+    return;
+  }
+  else if (!(V11 == "") && !(T11 == "") && !(V22 == "") && !(T22 == ""))
+  {
+    alert("To find the unknown Pressure or Volume. You must fill in the blank fields and not fill in one of the fields in the dimension for which you want to find the proportional value.");
+    return;
+  }
+  else if (V11 == "")
+  { 
+    final = (V22*T11)/T22;
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("V11").value = final;
+
+  }
+  else if (T22 == "")
+  {
+    final = (V22*T11)/V11;
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("T22").value = final;
+  }
+  else if (V22 == "")
+  {
+    final = (V11*T22)/T11;
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("V22").value = final;
+  }
+  else if (T11 == "")
+  {
+    final = (V11*T22)/V22;
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("T11").value = final;
+  }
+  
+} 
+
+</script>
+
+<h2>Clapeyron's equation<br>
+This equation consists of the union of the three laws of gases, in which he relates the properties of the gases between: volume, pressure and absolute temperature.</h2>
+<form name="myForm8" id="myForm8">
+    <table  border = "0" width = "400">
+
+        <tr>
+            <td>Universal constant of perfect gases in (J.mol<sup>-1</sup>.K<sup>-1</sup>):</td>
+            <td>8,3144621</td>
+        </tr>
+        <tr>
+            <td>Pressure in (Pa):</td>
+            <td><input type="text" id="Pc"></td></tr>
+        <tr>
+            <td>Volume in (m³):</td>
+            <td><input type="text" id="Vc"></td>
+        </tr>
+        <tr>
+            <td>Number of moles in (mol):</td>
+            <td><input type="text" id="nc"></td>
+        </tr>
+        <tr>
+            <td>Temperature in (k):</td>
+            <td><input type="text" id="Tc"></td>
+        </tr>
+    </table>
+    <button type="submit">Calculate</button>
+    <button type="reset">Clear</button>
+</form>
+
+<script>
+
+document.getElementById("myForm8").onsubmit=function(){
+    calculate8();
+    return false;
+};
+
+function calculate8()
+{
+  var Pc = document.getElementById("Pc").value;
+  var Vc = document.getElementById("Vc").value;
+  var nc = document.getElementById("nc").value;
+  var Tc = document.getElementById("Tc").value;
+  var final;
+
+  if (Pc == "" && Vc == "" && nc == "" && Tc == "")
+  {
+    alert("You need to fill in the blank field the values you have for this and find the value of the unknown Pressure, Temperature or Volume.");
+    return;
+  }
+  else if (!(Pc == "") && !(Vc == "") && !(nc == "") && !(Tc == ""))
+  {
+    alert("To find the unknown Pressure, Temperature or Volume. You must fill in the blank fields and not fill in one of the fields in the dimension for which you want to find the proportional value.");
+    return;
+  }
+  else if (Pc == "")
+  { 
+    final = (nc*8.3144621*Tc)/Vc;
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("Pc").value = final;
+
+  }
+  else if (Vc == "")
+  {
+    final = (nc*8.3144621*Tc)/Pc;
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("Vc").value = final;
+  }
+  else if (nc == "")
+  {
+    final = (Pc*Vc)/(8.3144621*Tc);
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("nc").value = final;
+  }
+  else if (Tc == "")
+  {
+    final = (Pc*Vc)/(8.3144621*nc);
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("Tc").value = final;
+  }
+  
+} 
+
+</script>
+
+
+<h2>General Equation of Perfect Gases<br>
+The General Equation of Perfect Gases is used for gases that have a constant mass (number of moles) and variation of any of the quantities: pressure, volume and temperature.</h2>
+<form name="myForm9" id="myForm9">
+    <table  border = "0" width = "400">
+
+        <tr>
+            <td>Pressure 1 in (Pa):</td>
+            <td><input type="text" id="PG1"></td></tr>
+        <tr>
+            <td>Volume 1 in (m³):</td>
+            <td><input type="text" id="VG1"></td>
+        </tr>
+        <tr>
+            <td>Temperature 1 in (K):</td>
+            <td><input type="text" id="TG1"></td>
+        </tr>
+        <tr>
+            <td>Pressure 2 in (Pa):</td>
+            <td><input type="text" id="PG2"></td>
+        </tr>
+        <tr>
+            <td>Volume 2 in (m³):</td>
+            <td><input type="text" id="VG2"></td>
+        </tr>
+        <tr>
+            <td>Temperature 2 in (k):</td>
+            <td><input type="text" id="TG2"></td>
+        </tr>
+    </table>
+    <button type="submit">Calculate</button>
+    <button type="reset">Clear</button>
+</form>
+
+<script>
+
+document.getElementById("myForm9").onsubmit=function(){
+    calculate9();
+    return false;
+};
+
+function calculate9()
+{
+  var PG1 = document.getElementById("PG1").value;
+  var VG1 = document.getElementById("VG1").value;
+  var TG1 = document.getElementById("TG1").value;
+  var PG2 = document.getElementById("PG2").value;
+  var VG2 = document.getElementById("VG2").value;
+  var TG2 = document.getElementById("TG2").value;
+  var final;
+
+  if (PG1 == "" && VG1 == "" && TG1 == "" && PG2 == "" && VG2 == "" && TG2 == "")
+  {
+    alert("You need to fill in the blank field the values you have for this and find the value of the unknown Pressure, Temperature or Volume.");
+    return;
+  }
+  else if (!(PG1 == "") && !(VG1 == "") && !(TG1 == "") && !(PG2 == "") && !(VG2 == "") && !(TG2 == ""))
+  {
+    alert("To find the unknown Pressure, Temperature or Volume. You must fill in the blank fields and not fill in one of the fields in the dimension for which you want to find the proportional value.");
+    return;
+  }
+  else if (PG1 == "")
+  { 
+    final = (PG2*VG2)*(TG1)/(TG2*VG1);
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("PG1").value = final;
+
+  }
+  else if (VG1 == "")
+  {
+    final = (PG2*VG2)*(TG1)/(TG2*PG1);
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("VG1").value = final;
+  }
+  else if (TG1 == "")
+  {
+    final = (PG1*VG1)/(PG2*VG2/TG2);
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("TG1").value = final;
+  }
+  else if (PG2 == "")
+  {
+    final = (PG1*VG1)*(TG2)/(TG1*VG2);
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("PG2").value = final;
+  }
+  else if (VG2 == "")
+  {
+    final = (PG1*VG1)*(TG2)/(TG1*PG2);
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("VG2").value = final;
+  }
+  else if (TG2 == "")
+  {
+    final = (PG2*VG2)/(PG1*VG1/TG1);
+    //Display!
+    final = final.toFixed(2);
+    document.getElementById("TG2").value = final;
+  }
+  
+} 
+
+</script>
+
+ </body>
+ </html>
